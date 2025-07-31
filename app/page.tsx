@@ -20,16 +20,19 @@ const loveMessages = [
 ]
 
 const photos = [
-  { src: "/placeholder.svg?height=400&width=400&text=Beautiful+Memory+1", alt: "Our beautiful memory 1" },
-  { src: "/placeholder.svg?height=400&width=400&text=Beautiful+Memory+2", alt: "Our beautiful memory 2" },
-  { src: "/placeholder.svg?height=400&width=400&text=Beautiful+Memory+3", alt: "Our beautiful memory 3" },
-  { src: "/placeholder.svg?height=400&width=400&text=Beautiful+Memory+4", alt: "Our beautiful memory 4" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/image/upload/v1753941708/IMG-20250729-WA0063_tl9bwq.jpg", alt: "Our beautiful memory 1" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/image/upload/v1753941690/IMG-20250729-WA0066_yaocbj.jpg", alt: "Our beautiful memory 2" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/image/upload/v1753941692/IMG-20250729-WA0065_rxo9sj.jpg", alt: "Our beautiful memory 3" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/image/upload/v1753941698/IMG-20250729-WA0064_czlcvg.jpg", alt: "Our beautiful memory 4" },
 ]
 
 const videos = [
-  { src: "/our-memories-1.mp4", title: "Our First Date 💕" },
-  { src: "/our-memories-2.mp4", title: "Our Adventure Together 🌟" },
-  { src: "/our-memories-3.mp4", title: "Just Being Us 💖" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1753942778/cap_kzbrlm.mp4", title: "Our First Pictures Together  💕" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1754003406/joo_sjdqyq.mp4", title: "Just you 🌟" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1754003416/lala_pwrarv.mp4", title: "Just Being Us 💖" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1753941830/VID-20250729-WA0012_zuboud.mp4", title: "You are my everything 🥰" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1753941772/VID-20250729-WA0010_mnkgdx.mp4", title: "Crazy 😂😂" },
+  { src: "https://res.cloudinary.com/dpnw05tbx/video/upload/v1753941886/VID-20250729-WA0008_j7om4s.mp4", title: "Unforgettable Moments 🌈" },
 ]
 
 const floatingMessages = [
@@ -394,7 +397,7 @@ export default function GirlfriendSurprise() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
             >
-              <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">Our Special Moments 🎥</h3>
+              <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">Special Moments 🎥</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {videos.map((video, index) => (
                   <div key={index} className="relative group cursor-pointer" onClick={() => playVideo(index)}>
